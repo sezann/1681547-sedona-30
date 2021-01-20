@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Elvira](https://up.htmlacademy.ru/htmlcss/30/user/1681547).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
