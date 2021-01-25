@@ -8,17 +8,150 @@
 <body>
     <header>
         <nav>
-          <a href="index.html">
-        <img src="" alt="City of Sedona"><!--logo-->
-          </a>
+            <a href="index.html">
+            <img src="" alt="City of Sedona"><!--logo-->
+            </a>
         <ul>
-          <li><a href="#">ИНФОРМАЦИЯ</a></li>
-          <li><a href="#">ФОТО И ВИДЕО</a></li>
-          <li><a href="#">КАРТА ШТАТА</a></li>
-          <li><a href="catalog.html">ГОСТИНИЦЫ</a></li>
+            <li><a href="#">ИНФОРМАЦИЯ</a></li>
+            <li><a href="#">ФОТО И ВИДЕО</a></li>
+            <li><a href="#">КАРТА ШТАТА</a></li>
+            <li><a href="catalog.html">ГОСТИНИЦЫ</a></li>
         </ul>
         </nav> 
-      </header>
-    
+    </header>
+      <main>
+        <h1>Каталог гостиниц</h1>
+
+        <section>
+        <h2>Фильтр гостиниц</h2>
+        <img src="" alt="Grand Canyon"><!--background photo-->
+        <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+                <legend>ИНФРАСТРУКТУРА:</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="pool" id="pool-field" checked>
+                        <label for="pool-field">БАССЕЙН</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="parking" id="parking-field">
+                        <label for="parking-field">ПАРКОВКА</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="wi-fi" id="wi-fi-field">
+                        <label for="wi-fi-field">WI-FI</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>ТИП ЖИЛЬЯ:</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="hotel" id="hotel-field" checked>
+                        <label for="hotel-field">ГОСТИНИЦА</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="motel" id="motel-field" checked>
+                        <label for="motel-field">МОТЕЛЬ</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="apartments" id="apartments-field" checked>
+                        <label for="apartments-field">АПАРТАМЕНТЫ</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+
+        <form action="https://echo.htmlacademy.ru/." method="get">
+            <table>
+                <caption>СТОИМОСТЬ В СУТКИ (Р):</caption>
+                <tr>
+                    <td>ОТ 0</td>
+                    <td>ДО 3000</td>
+                </tr>
+            </table>
+            <button type="submit">Показать</button>
+        </form>
+        </section>
+
+        <section>
+            <h3>НАЙДЕНО: 3</h3>
+            <ul>
+                СОРТИРОВКА:
+                <li>ПО ЦЕНЕ</li>
+                <li>ПО ТИПУ</li>
+                <li>ПО РЕЙТИНГУ</li>
+            </ul>
+            <img src="#" alt="icon-up-dir"><!--кнопка вверх-->
+            <img src="#" alt="icon-down-dir"><!--кнопка вниз-->
+        </section>  
+
+        <section>
+            <h3>Список предложений по размещению</h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>AMARA RESORT & SPA</h3>
+                        <p><img src="http://via.placeholder.com/150x100" alt="Гостиница AMARA RESORT&SPA"></p>
+                    </a>
+                    <p>
+                    ГОСТИНИЦА ОТ 4000 Р.
+                    <button type="button">ПОДРОБНЕЕ</button>
+                    <button type="button">ЗАБРОНИРОВАТЬ</button>
+                    <button type="button">РЕЙТИНГ 8,5</button>
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>DESERT QUAIL INN</h3>
+                        <p><img src="http://via.placeholder.com/150x100" alt="Мотель DESERT QUAIL INN"></p>
+                    </a>
+                    <p>
+                    МОТЕЛЬ ОТ 3000 Р.
+                    <button type="button">ПОДРОБНЕЕ</button>
+                    <button type="button">ЗАБРОНИРОВАТЬ</button>
+                    <button type="button">РЕЙТИНГ 8,9</button>
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>VILLAS AT POCO DIABLO</h3>
+                        <p><img src="http://via.placeholder.com/150x100" alt="Апартаменты VILLAS AT POCO DIABLO"></p>
+                    </a>
+                    <p>
+                    АПАРТАМЕНТЫ ОТ 2000 Р.
+                    <button type="button">ПОДРОБНЕЕ</button>
+                    <button type="button">ЗАБРОНИРОВАТЬ</button>
+                    <button type="button">РЕЙТИНГ 9,2</button>
+                    </p>
+                </li>
+            </ul>
+        </section> 
+    </main>
+    <footer>
+        <section>
+            <h2>Контактная информация</h2>
+            <p>#VISITSEDONA<br>
+            ТЕЛ: <a href="tel:+74956660166">+7(495)666-01-66</a></p>
+        </section>
+
+        <section>
+            <h2>Соцсети</h2>
+            <ul>
+                <li>
+                    <a href="#">Twitter</a>
+                </li>
+                <li>
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <a href="#">Youtube</a>
+                </li>
+          </ul>
+        </section>
+
+        <p>WEBSITE BY<a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="#"></a></p>
+    </footer>
 </body>
 </html>
