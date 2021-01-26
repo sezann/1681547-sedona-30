@@ -8,14 +8,12 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">
-            <img src="" alt="City of Sedona"><!--logo-->
-            </a>
+            <a href="index.html"><img src="" alt="City of Sedona"></a><!--logo-->
         <ul>
-            <li><a href="#">ИНФОРМАЦИЯ</a></li>
-            <li><a href="#">ФОТО И ВИДЕО</a></li>
-            <li><a href="#">КАРТА ШТАТА</a></li>
-            <li><a href="catalog.html">ГОСТИНИЦЫ</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
         </nav> 
     </header>
@@ -24,110 +22,89 @@
 
         <section>
         <h2>Фильтр гостиниц</h2>
-        <img src="" alt="Grand Canyon"><!--background photo-->
         <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
-                <legend>ИНФРАСТРУКТУРА:</legend>
+                <legend>Инфраструктура:</legend>
                 <ul>
                     <li>
                         <input type="checkbox" name="pool" id="pool-field" checked>
-                        <label for="pool-field">БАССЕЙН</label>
+                        <label for="pool-field">Бассейн</label>
                     </li>
                     <li>
                         <input type="checkbox" name="parking" id="parking-field">
-                        <label for="parking-field">ПАРКОВКА</label>
+                        <label for="parking-field">Парковка</label>
                     </li>
                     <li>
                         <input type="checkbox" name="wi-fi" id="wi-fi-field">
-                        <label for="wi-fi-field">WI-FI</label>
+                        <label for="wi-fi-field">Wi-fi</label>
                     </li>
                 </ul>
             </fieldset>
             <fieldset>
-                <legend>ТИП ЖИЛЬЯ:</legend>
+                <legend>Тип жилья:</legend>
                 <ul>
                     <li>
                         <input type="checkbox" name="hotel" id="hotel-field" checked>
-                        <label for="hotel-field">ГОСТИНИЦА</label>
+                        <label for="hotel-field">Гостиница</label>
                     </li>
                     <li>
                         <input type="checkbox" name="motel" id="motel-field" checked>
-                        <label for="motel-field">МОТЕЛЬ</label>
+                        <label for="motel-field">Мотель</label>
                     </li>
                     <li>
                         <input type="checkbox" name="apartments" id="apartments-field" checked>
-                        <label for="apartments-field">АПАРТАМЕНТЫ</label>
+                        <label for="apartments-field">Апартаменты</label>
                     </li>
                 </ul>
             </fieldset>
-        </form>
-
-        <form action="https://echo.htmlacademy.ru/." method="get">
-            <input type="text" name="ОТ 0" value="ОТ 0">
-            <input type="text" name="до 3000" value="ДО 3000">
-            <button type="submit">Показать</button>
+            <fieldset>
+                <legend>Стоимость в сутки (р):</legend>   
+                <input type="text" name="ОТ 0" value="ОТ 0">
+                <input type="text" name="до 3000" value="ДО 3000">
+                <button type="submit">Показать</button>
+            </fieldset>
         </form>
         </section>
 
         <section>
-            <h3>НАЙДЕНО: 3</h3>
+            <h3>Найдено: 3</h3>
             <ul>
-                СОРТИРОВКА:
-                <li>ПО ЦЕНЕ</li>
-                <li>ПО ТИПУ</li>
-                <li>ПО РЕЙТИНГУ</li>
+                Сортировка:
+                <li><a src="#">По цене</a></li>
+                <li><a src="#">По типу</a></li>
+                <li><a src="#">По рейтингу</a></li>
+                <li><a src="#">вверх</a></li>
+                <li><a src="#">вниз</a></li>
             </ul>
-            <a src="#">ВВЕРХ</a>
-            <a src="#">ВНИЗ</a>
         </section>  
 
         <section>
             <h3>Список предложений по размещению</h3>
             <ul>
                 <li>
-                    <a href="#">
-                        <h3>AMARA RESORT & SPA</h3>
-                        <p><img src="http://via.placeholder.com/150x100" alt="Гостиница AMARA RESORT&SPA"></p>
-                    </a>
-                    <p>
-                        ГОСТИНИЦА ОТ 4000 Р.
-                        <button type="button">ПОДРОБНЕЕ</button>
-                        <button type="button">ЗАБРОНИРОВАТЬ</button>
-                        <p>
-                        <span>4 звезды</span><br>
-                        РЕЙТИНГ 8,5
-                        </p>
-                    </p>
+                    <h3><a href="#">Amara Resort & Spa</a></h3>
+                        <p><img src="http://via.placeholder.com/150x100" alt="Гостиница Amara Resort & Spa"></p>
+                        <p>Гостиница от <span>4000 Р.</span></p>
+                        <button type="button">Подробнее</button>
+                        <button type="button">Забронировать</button>
+                        <p><span>4 звезды</span>Рейтинг 8,5</p>
                 </li>
                 <li>
-                    <a href="#">
-                        <h3>DESERT QUAIL INN</h3>
-                        <p><img src="http://via.placeholder.com/150x100" alt="Мотель DESERT QUAIL INN"></p>
-                    </a>
-                    <p>
-                        МОТЕЛЬ ОТ 3000 Р.
-                        <button type="button">ПОДРОБНЕЕ</button>
-                        <button type="button">ЗАБРОНИРОВАТЬ</button>
-                        <p>
-                        <span>3 звезды</span><br>
-                        РЕЙТИНГ 8,9
-                        </p>
-                    </p>
+                    <h3><a href="#">Desert Quail Inn</a></h3>
+                        <p><img src="http://via.placeholder.com/150x100" alt="Мотель Desert Quail Inn"></p>
+                        <p>Мотель от <span>3000 Р.</span></p>
+                        <button type="button">Подробнее</button>
+                        <button type="button">Забронировать</button>
+                        <p><span>3 звезды</span>Рейтинг 8,9</p>
+                       
                 </li>
                 <li>
-                    <a href="#">
-                        <h3>VILLAS AT POCO DIABLO</h3>
-                        <p><img src="http://via.placeholder.com/150x100" alt="Апартаменты VILLAS AT POCO DIABLO"></p>
-                    </a>
-                    <p>
-                        АПАРТАМЕНТЫ ОТ 2000 Р.
-                        <button type="button">ПОДРОБНЕЕ</button>
-                        <button type="button">ЗАБРОНИРОВАТЬ</button>
-                        <p>
-                        <span>2 звезды</span><br>
-                        РЕЙТИНГ 9,2
-                        </p>
-                    </p>
+                    <h3><a href="#">Villas at Poco Diablo</a></h3>
+                        <p><img src="http://via.placeholder.com/150x100" alt="Апартаменты Villas at Poco Diablo"></p>
+                        <p>Апартаменты от <span>2000 Р.</span></p>
+                        <button type="button">Подробнее</button>
+                        <button type="button">Забронировать</button>
+                        <p><span>2 звезды</span>Рейтинг 9,2</p>
                 </li>
             </ul>
         </section> 
@@ -135,8 +112,8 @@
     <footer>
         <section>
             <h2>Контактная информация</h2>
-            <p>#VISITSEDONA<br>
-            ТЕЛ: <a href="tel:+74956660166">+7(495)666-01-66</a></p>
+            <a href="#">#VISITSEDONA</a>
+            <p>ТЕЛ: <a href="tel:+74956660166">+7(495)666-01-66</a></p>
         </section>
 
         <section>
