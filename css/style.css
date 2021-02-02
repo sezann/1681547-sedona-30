@@ -1,0 +1,222 @@
+/*Variables*/
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-gray: #666666;
+  --basic-brown: #766357;
+  --lightblue: #81b3d2;
+  --lightblue-hover: #669ec0;
+  --lightblue-focus: #5496bd;
+  --text-color: #333333;
+  --brown-hover: #604e43;
+  --brown-focus: #503e33;
+  --features-gray: #eeeeee;
+  --form-gray: #f2f2f2;
+  --gray-hover: #ebebeb;
+  --gray-focus: #e5e5e5;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+/* User navigation */
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+.site-navigation a:focus {
+  background-color: var(--basic-brown);
+}
+
+/*Welcome group*/
+
+.welcom {
+  background-image: url("../img/background-photo.jpg");
+  text-align: center;
+}
+.description h3 {
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+}
+.description p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--text-color);
+}
+
+
+/* Features */
+
+.features-list {
+  list-style: none;
+}
+.feature-list h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+}
+.feature p {
+  text-align: center;
+}
+.feature-1,
+.feature-2 {
+  color: var(--basic-white);
+  background-color: var(--lightblue);
+}
+.feature-3,
+.feature-4,
+.feature-5 {
+  color: var(--text-color);
+  background-color: var(--features-gray);
+}
+
+/*Recommendations*/
+
+.recommendations-list {
+  list-style: none;
+}
+.recommendations h3 {
+  text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+}
+.recommendations p {
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* Hotel-search*/
+
+.hotel-search h2, p {
+  text-align: center;
+  font-size: 30px;
+  line-height: 24px;
+}
+.sedona-hotels {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+.sedona-hotels:hover {
+  background-color: var(--brown-hover);
+}
+.sedona-hotels:focus {
+  background-color: var(--brown-focus);
+  opacity: 0.5;
+}
+.search-button {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-white);
+  background-color: var(--lightblue);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+.search-button:hover {
+  background-color: var(--lightblue-hover);
+}
+.search-button:focus {
+  background-color: var(--lightblue-focus);
+  opacity: 0.5;
+}
+.booking-form {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  box-shadow: 0 7px 15px 0 #000101;
+}
+.booking-form label {
+  font-size: 14px;
+  line-height: 26px;
+}
+.booking-form input {
+  font: inherit;
+  background-color: var(--form-gray);
+  border: none;
+}
+.booking-form input:hover {
+  background-color: var(--gray-hover);
+}
+.booking-form input:focus {
+  background-color: var(--gray-focus);
+  border: 1px solid #666666;
+}
+.booking-date input {
+  background-image: url("../img/calendar.svg");
+}
+/*Footer*/
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.footer-hastag,
+.footer-phone {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Social button */
+
+.social-button {
+  color: var(--lightblue);
+}
+.social-button:hover {
+  background-color: var(--lightblue-hover);
+}
+.social-button:focus {
+  background-color: var(--lightblue-focus);
+  opacity: 0.5;
+}
+.footer-copyright .button:hover {
+  color: var(--lightblue-hover);
+}
+.footer-copyright .button:focus {
+  color: var(--basic-gray);
+}
+
