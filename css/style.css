@@ -47,9 +47,9 @@ img {
 
 .main-navigation {
   font-size: 14px;
+  font-weight: bold;
   line-height: 26px;
   color: var(--basic-black);
-  background-color: transparent;
 }
 
 .site-navigation {
@@ -61,14 +61,18 @@ img {
 .site-navigation a {
   color: var(--basic-black);
 }
+.site-navigation a:hover {
+  color: var(--basic-brown);
+}
 .site-navigation a:focus {
-  background-color: var(--basic-brown);
+  color: var(--basic-brown);
+  background-color: none;
 }
 
 /*Welcome group*/
 
 .welcom {
-  background-image: url("../img/background-photo.jpg");
+  background-image: url("background-photo.jpg");
   text-align: center;
 }
 .description h3 {
@@ -91,21 +95,21 @@ img {
 }
 .feature-list h3 {
   text-align: center;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 21px;
   line-height: 21px;
 }
-.feature p {
+.benefits h3, p {
   text-align: center;
 }
-.feature-1,
-.feature-2 {
+.feature-item-city,
+.feature-item-bridge {
   color: var(--basic-white);
   background-color: var(--lightblue);
 }
-.feature-3,
-.feature-4,
-.feature-5 {
+.feature-item-square,
+.feature-item-road,
+.feature-item-silence {
   color: var(--text-color);
   background-color: var(--features-gray);
 }
@@ -127,7 +131,7 @@ img {
 
 /* Hotel-search*/
 
-.hotel-search h2, p {
+.hotel-search h2 {
   text-align: center;
   font-size: 30px;
   line-height: 24px;
@@ -185,9 +189,8 @@ img {
   background-color: var(--gray-focus);
   border: 1px solid #666666;
 }
-.booking-date input {
-  background-image: url("../img/calendar.svg");
-}
+
+
 /*Footer*/
 
 .main-footer {
@@ -195,8 +198,11 @@ img {
   background-color: var(--basic-white);
 }
 
-.footer-hastag,
+.footer-hashtag,
 .footer-phone {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
   color: inherit;
   text-decoration: none;
 }

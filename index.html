@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
@@ -32,11 +32,11 @@
 
         <section>
           <div class="description">
-            <h3>Седона-небольшой городок в Аризоне,заслуживающий большего!</h3>
+            <h3>Седона-небольшой городок в Аризоне, заслуживающий большего!</h3>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </div>
           <ul class="features-list">
-            <li class="feature feature-1">
+            <li class="benefits feature-item-city">
               <h3>Настоящий городок</h3>
               <p>№1</p>
               <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
@@ -63,23 +63,23 @@
               </ul>
             </li>
 
-            <li class="feature feature-2">
+            <li class="benefits feature-item-bridge">
               <h3>Там есть мост дьявола</h3>
               <p>№2</p>
               <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
               <img src="img/grand-canyon.jpg" width="800" height="256" alt="Мост дьявола">
             </li>
-            <li class="feature feature-3">
+            <li class="benefits feature-item-square">
               <h3>Небольшая площадь</h3>
               <p>№3</p>
               <p>Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="feature feature-4">
+            <li class="benefits feature-item-road">
               <h3>Красивая дорога</h3>
               <p>№4</p>
               <p>Ехать в Седону из лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="feature feature-5">
+            <li class="benefits feature-item-silence">
               <h3>Мало туристов</h3>
               <p>№5</p>
               <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -90,8 +90,7 @@
         <section class="hotel-search">
           <h2>Заинтересовались?</h2>
             <p class="booking-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <fieldset>
-            <legend class="sedona-hotels">Поиск гостиниц в Седоне</legend>
+            <a class="sedona-hotels" href="#">Поиск гостиниц в Седоне</a>
             <form class="booking-form" action="https://echo.htmlacademy.ru/." method="get">
               <p class="booking-date">
                 <label for="check-in">Дата заезда:</label>
@@ -101,28 +100,17 @@
                 <label for="check-out">Дата выезда:</label>
                 <input id="check-out" type="text" name="date-out" placeholder="4 июля 2017" required>
               </p>
-              <p class="adults">
-                <label>Взрослые
-                  <select name="quantity" required>
-                    <option value="1">1</option>
-                    <option value="2" selected>2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </label>
+              <p class="booking-date">
+                <label for="adults">Взрослые</label>
+                <button type="button">-</button>
+                <input id="adults" type="text" name="adults-quantity" placeholder="2">
+                <button type="button">+</button>
               </p>
               <p class="kids">
-                <label>Дети
-                  <select name="quantity" required>
-                    <option value="0" selected>0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </label>
+                <label for="kids">Дети</label>
+                <button type="button">-</button>
+                <input id="kids" type="text" name="kids-quantity" placeholder="0">
+                <button type="button">+</button>
               </p>
 
               <input class="search-button" type="submit" name="search-button" value="Найти">
@@ -138,8 +126,8 @@
 
     <footer class="main-footer">
       <section class="footer-contacts">
-        <a class="footer-hashtag" href="#">#VISITSEDONA</a>
-        <p>ТЕЛ: <a class="footer-phone"href="tel:+74956660166">+7(495)666-01-66</a></p>
+        <p><a class="footer-hashtag" href="#">#VISITSEDONA</a></p>
+        <p><a class="footer-phone" href="tel:+74956660166">Тел: +7(495)666-01-66</a></p>
       </section>
 
       <section class="footer-social">
