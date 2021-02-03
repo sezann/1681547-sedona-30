@@ -20,7 +20,7 @@
 /* Global */
 
 body {
-  min-width: 960px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -62,17 +62,16 @@ img {
   color: var(--basic-black);
 }
 .site-navigation a:hover {
-  color: var(--basic-brown);
+  color: var(--lightblue);
 }
 .site-navigation a:focus {
   color: var(--basic-brown);
-  background-color: none;
 }
 
 /*Welcome group*/
 
-.welcom {
-  background-image: url("background-photo.jpg");
+.welcome-group {
+  background-image: url("../img/background-photo.jpg");
   text-align: center;
 }
 .description h3 {
@@ -207,7 +206,7 @@ img {
   text-decoration: none;
 }
 
-/* Social button */
+/* Social list */
 
 .social-button {
   color: var(--lightblue);
@@ -224,5 +223,134 @@ img {
 }
 .footer-copyright .button:focus {
   color: var(--basic-gray);
+}
+
+/*catalog.html*/
+
+h3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+.filter-option,
+.results-filter,
+.catalog-list,
+.social-list {
+  list-style: none;
+}
+.site-navigation-current a {
+  color: var(--basic-brown);
+}
+
+/* Filters */
+
+.filters fieldset {
+  border: none;
+}
+.filters legend {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+.filters {
+  color: var(--basic-white);
+  background-image: url("../img/background-photo.jpg");
+  background-color: var(--gray-focus);
+}
+.filter-option {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+.price-option,
+.price-button {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+
+/* Results */
+
+.results-filter {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+.results-dropdown-active a {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--lightblue-focus);
+}
+.results-dropdown a {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-decoration: dotted;/* не сработало */
+  text-decoration-color: var(--lightblue);
+}
+.results-dropdown a:hover {
+  color: var(--lightblue);
+}
+.results-dropdown a:focus {
+  color: var(--basic-black);
+}
+
+/* Catalog */
+
+.catalog-title a {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+.catalog-title a:hover {
+  color: var(--lightblue);
+}
+.catalog-title a:focus {
+  color: var(--basic-black);
+}
+.catalog-category,
+.catalog-price {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--text-color);
+}
+.catalog-option .details,
+.catalog-option .booking {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+.catalog-option .details {
+  background-color: var(--lightblue);
+}
+.catalog-option .details:hover {
+  background-color: var(--lightblue-hover);
+}
+.catalog-option .details:focus {
+  background-color: var(--lightblue-focus);
+  opacity: 30%;
+}
+.catalog-option .booking {
+  background-color: var(--basic-brown);
+}
+.catalog-option .booking:hover {
+  background-color: var(--brown-hover);
+}
+.catalog-option .booking:focus {
+  background-color: var(--brown-focus);
+  opacity: 30%;
+}
+.catalog-option .rating {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-gray);
+  background-color: var(--form-gray);
 }
 
