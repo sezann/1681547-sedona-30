@@ -30,8 +30,14 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
-  background-position: top center;
   background-repeat: no-repeat;
+
+}
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -43,6 +49,22 @@ img {
   height: auto;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+.site-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
 /* Main navigation */
 
 .main-navigation {
@@ -53,6 +75,9 @@ img {
 }
 
 .site-navigation {
+  margin: 0;
+  padding 0;
+  text-align: center;
   list-style: none;
 }
 
@@ -71,13 +96,33 @@ img {
 /*Welcome group*/
 
 .welcome-group {
-  background-image: url("../img/background-photo.jpg");
+  display: grid;
+  grid-column: 1 / -1;
+  background-color: var(--lightblue);
   text-align: center;
+}
+
+.welcome-title {
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.description {
+  display: grid;
+  grid-column: 1 / -1;
+  height: 272px;
+
 }
 .description h3 {
   text-align: center;
   font-size: 21px;
   line-height: 26px;
+  padding-left: 365px;
+  padding-right: 365px;
+  margin-top: 47.5px;
+  margin-bottom: 16.5px;
+
 }
 .description p {
   text-align: center;
@@ -97,43 +142,85 @@ img {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
+  padding-top: 50px;
 }
-.benefits h3, p {
+.benefits h3,
+.benefits p {
   text-align: center;
 }
 .feature-item-city,
 .feature-item-bridge {
   color: var(--basic-white);
   background-color: var(--lightblue);
+
 }
 .feature-item-square,
 .feature-item-road,
 .feature-item-silence {
   color: var(--text-color);
   background-color: var(--features-gray);
+  display: inline-block;
+  height: 256px;
+  padding: 10px;
 }
-
+.feature-item-city {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+}
+.feature-item-bridge {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+}
 /*Recommendations*/
 
 .recommendations-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: 330px;
   list-style: none;
+  text-align: center;
 }
 .recommendations h3 {
-  text-align: center;
+  margin-top: 160px;
+  margin-bottom: 25px;
   font-size: 21px;
   line-height: 21px;
 }
 .recommendations p {
-  text-align: center;
   color: var(--text-color);
+}
+.gifts p {
+  padding-left: 66px;
+  padding-right: 65px;
+}
+.food p {
+  padding-left: 51px;
+  padding-right: 52px;
+}
+.home p {
+  padding-left: 63px;
+  padding-right: 73px;
 }
 
 /* Hotel-search*/
 
+.hotel-search {
+  text-align: center;
+}
 .hotel-search h2 {
   text-align: center;
   font-size: 30px;
   line-height: 24px;
+  padding-top: 58px;
+}
+.intro {
+  height: 300px;
+}
+.intro p {
+  padding-bottom: 54px;
 }
 .sedona-hotels {
   font-size: 21px;
@@ -193,8 +280,13 @@ img {
 /*Footer*/
 
 .main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  padding-bottom: 36px;
+  padding-top: 36px;
 }
 
 .footer-hashtag,
@@ -218,10 +310,10 @@ img {
   background-color: var(--lightblue-focus);
   opacity: 0.5;
 }
-.footer-copyright .button:hover {
+.button img:hover {
   color: var(--lightblue-hover);
 }
-.footer-copyright .button:focus {
+.button img:focus {
   color: var(--basic-gray);
 }
 
@@ -255,7 +347,7 @@ h3 {
 .filters {
   color: var(--basic-white);
   background-image: url("../img/background-photo.jpg");
-  background-color: var(--gray-focus);
+  background-color: var(--lightblue);
 }
 .filter-option {
   font-weight: normal;
