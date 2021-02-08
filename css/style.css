@@ -54,10 +54,6 @@ img {
 .page {
   height: 100%;
 }
-.site-navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -72,13 +68,16 @@ img {
   font-weight: bold;
   line-height: 26px;
   color: var(--basic-black);
+  position: relative;
 }
 
 .site-navigation {
-  margin: 0;
-  padding 0;
-  text-align: center;
   list-style: none;
+}
+.main-header-logo a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* User navigation */
@@ -96,32 +95,23 @@ img {
 /*Welcome group*/
 
 .welcome-group {
-  display: grid;
-  grid-column: 1 / -1;
   background-color: var(--lightblue);
   text-align: center;
-}
-
-.welcome-title {
   background-image: url("../img/background-photo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+.welcome-title {
+  padding: 80px 370px;
 }
 
-.description {
-  display: grid;
-  grid-column: 1 / -1;
-  height: 272px;
 
-}
 .description h3 {
   text-align: center;
   font-size: 21px;
   line-height: 26px;
   padding-left: 365px;
   padding-right: 365px;
-  margin-top: 47.5px;
-  margin-bottom: 16.5px;
+  padding-top: 47px;
+
 
 }
 .description p {
@@ -129,6 +119,8 @@ img {
   font-size: 14px;
   line-height: 26px;
   color: var(--text-color);
+  padding-left: 340px;
+  padding-right: 341px;
 }
 
 
@@ -142,26 +134,49 @@ img {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  padding-top: 50px;
+
 }
 .benefits h3,
 .benefits p {
   text-align: center;
 }
+.city {
+  padding: 20px 45px;
+}
+.city-image img {
+  display: block;
+}
+.bridge-image img {
+  display: block;
+}
+
 .feature-item-city,
 .feature-item-bridge {
   color: var(--basic-white);
   background-color: var(--lightblue);
-
 }
+
+.benefits-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  text-align: center;
+}
+
 .feature-item-square,
 .feature-item-road,
 .feature-item-silence {
   color: var(--text-color);
   background-color: var(--features-gray);
-  display: inline-block;
-  height: 256px;
-  padding: 10px;
+}
+.feature-item-square {
+  padding: 54px 80px;
+}
+.feature-item-road {
+  padding: 54px;
+}
+.feature-item-silence {
+  padding: 54px 77px;
 }
 .feature-item-city {
   display: grid;
@@ -171,36 +186,35 @@ img {
   display: grid;
   grid-template-columns: 1fr 400px;
 }
+
 /*Recommendations*/
 
 .recommendations-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0;
-  margin: 0;
-  width: auto;
-  height: 330px;
   list-style: none;
   text-align: center;
 }
+
 .recommendations h3 {
-  margin-top: 160px;
+  padding-top: 160px;
   margin-bottom: 25px;
   font-size: 21px;
   line-height: 21px;
 }
+
 .recommendations p {
   color: var(--text-color);
 }
-.gifts p {
+.gifts {
   padding-left: 66px;
   padding-right: 65px;
 }
-.food p {
+.food {
   padding-left: 51px;
   padding-right: 52px;
 }
-.home p {
+.home {
   padding-left: 63px;
   padding-right: 73px;
 }
