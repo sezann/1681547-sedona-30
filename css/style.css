@@ -350,6 +350,13 @@ h3 {
 
 /* Filters */
 
+.filter {
+  display: grid;
+  grid-template-columns: 210px 310px 1fr;
+}
+fieldset {
+  padding: 28px 72px;
+}
 .filters fieldset {
   border: none;
 }
@@ -375,6 +382,7 @@ h3 {
   line-height: 21px;
   color: var(--basic-white);
 }
+
 
 /* Results */
 
