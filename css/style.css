@@ -128,6 +128,7 @@ img {
 
 .features-list {
   list-style: none;
+  padding: 0;
 }
 .feature-list h3 {
   text-align: center;
@@ -161,6 +162,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   text-align: center;
+  padding: 0;
 }
 
 .feature-item-square,
@@ -324,10 +326,10 @@ img {
   background-color: var(--lightblue-focus);
   opacity: 0.5;
 }
-.button img:hover {
+.button:hover {
   color: var(--lightblue-hover);
 }
-.button img:focus {
+.button:focus {
   color: var(--basic-gray);
 }
 
