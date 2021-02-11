@@ -74,26 +74,30 @@ img {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
   padding: 0;
   margin: 0;
   list-style: none;
 }
+.site-navigation li {
+  width: 250px;
+  text-align: left;
+}
+.site-navigation li:last-child {
+  text-align: right;
+}
+.site-navigation li:nth-child(3) {
+  text-align: right;
+  margin-left: auto;
+}
+
 .main-header-logo {
   width: 138px;
   height: 70px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  top: 0;
 }
-
-/*.site-navigation .photo-video {
- margin-left: 140px;
-}
-.site-navigation .header-info {
-  margin-right: auto;
-}
-*/
 
 /* User navigation */
 
@@ -113,11 +117,8 @@ img {
   background-color: var(--basic-black);
   text-align: center;
   background-image: url("../img/background-photo.jpg");
-}
-.welcome-title {
   padding: 80px 370px;
 }
-
 
 .description h3 {
   text-align: center;
@@ -128,8 +129,6 @@ img {
   padding-left: 365px;
   padding-right: 365px;
   padding-top: 47px;
-
-
 }
 .description p {
   text-align: center;
@@ -159,9 +158,20 @@ img {
 .benefits p {
   text-align: center;
 }
-.city {
-  padding: 20px 45px;
+.benefits h3 {
+  width: 122px;
+  margin: auto;
 }
+.city {
+  padding: 50px;
+}
+.bridge {
+  padding: 40px;
+}
+.bridge h3 {
+  width: 160px;
+}
+
 .city-image img {
   display: block;
 }
@@ -193,10 +203,10 @@ img {
   padding: 54px 80px;
 }
 .feature-item-road {
-  padding: 54px;
+  padding: 60px;
 }
 .feature-item-silence {
-  padding: 54px 77px;
+  padding: 54px 75px;
 }
 .feature-item-city {
   display: grid;
@@ -217,7 +227,6 @@ img {
 }
 
 .recommendations h3 {
-  padding-top: 160px;
   margin-bottom: 25px;
   font-size: 21px;
   line-height: 21px;
@@ -226,18 +235,9 @@ img {
 .recommendations p {
   color: var(--text-color);
 }
-.gifts {
-  padding-left: 66px;
-  padding-right: 65px;
-}
-.food {
-  padding-bottom: 80px;
-  margin-left: 60px;
-  margin-right: 60px;
-}
-.home {
-  padding-left: 63px;
-  padding-right: 73px;
+
+.recommend-item {
+  padding: 60px 73px 80px 73px;
 }
 
 /* Hotel-search*/
@@ -345,7 +345,7 @@ img {
   background-color: var(--lightblue-focus);
   opacity: 0.5;
 }
-.footer-copyright .button:hover {
+.button:hover {
   color: var(--lightblue-hover);
 }
 .button:focus {
@@ -361,6 +361,7 @@ h3 {
 }
 .filter-option,
 .results-filter,
+.result-items,
 .catalog-list,
 .social-list {
   list-style: none;
@@ -408,9 +409,34 @@ fieldset {
 /* Results */
 
 .results-filter {
+  display: flex;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
+  padding: 0;
+}
+.results {
+  display: flex;
+  padding: 47px 70px 20px 70px;
+  align-items: baseline;
+}
+.results-filter li{
+  width: 95px;
+  text-align: center;
+  margin: 0;
+}
+
+.results-filter li:last-child {
+  text-align: right;
+}
+.results-filter li:nth-child(5) {
+  text-align: right;
+}
+
+.results-current {
+  width: 150px;
+  white-space: nowrap;
+  margin: 0;
 }
 .results-dropdown-active a {
   font-weight: normal;
