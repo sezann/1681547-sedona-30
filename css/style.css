@@ -124,7 +124,7 @@ img {
   color: var(--lightblue);
 }
 .site-navigation a:focus {
-  color: var(--basic-brown);
+  color: var(--gray-focus);
 }
 
 /*Welcome group*/
@@ -344,6 +344,7 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
   box-shadow: 0 7px 15px 0 #000101;
+  z-index: 1;
 }
 .booking-form p {
   margin: 0;
@@ -432,6 +433,10 @@ img {
 .union:focus path {
   fill: var(--lightblue-focus);
 }
+.map img {
+  position: relative;
+  z-index: 0;
+}
 
 
 /*Footer*/
@@ -440,9 +445,12 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
+  position: absolute;
+  width: inherit;
+  transform: translateY(-130px);
   color: var(--basic-black);
-  background-color: var(--basic-white);
-  padding-bottom: 36px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-bottom: 10px;
   padding-top: 36px;
 }
 
