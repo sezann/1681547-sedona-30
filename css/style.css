@@ -431,9 +431,18 @@ img {
 }
 
 .adults-field input,
-.adults-field button,
-.kids-field input,
-.kids-field button {
+.kids-field input {
+  font-family: inherit;
+  font-size: inherit;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+.kids-field button,
+.adults-field button {
   font-family: inherit;
   font-size: inherit;
   width: 38px;
@@ -442,8 +451,9 @@ img {
   margin: 0;
   padding: 0;
   outline: none;
-  border: 0px solid var(--basic-white);
+  border: none;
 }
+
 .adults-field button:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--gray-focus);
