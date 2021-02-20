@@ -65,13 +65,28 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+      </form>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="filter-item">
           <legend>Стоимость в сутки (р):</legend>
-            <div class="filter-price">
-              <input class="price-option" type="text" name="от 0" value="от 0">
-              <input class="price-option" type="text" name="до 3000" value="до 3000">
+          <div class="filter-price">
+            <div class="price-controls">
+              <label class="min-price">
+              <input class="price-option" type="text" name="min-price" value="от 0">
+              </label>
+              <label class="max-price">
+              <input class="price-option" type="text" name="max-price" value="до 3000">
+              </label>
             </div>
-            <button class="price-button" type="submit">Показать</button>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+          </div>
+          <button class="price-button" type="submit">Показать</button>-->
         </fieldset>
       </form>
     </section>
