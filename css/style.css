@@ -1012,33 +1012,23 @@ fieldset {
   height: 27px;
   position: relative;
 }
-.catalog-option .star-1 {
+.catalog-option .star {
   position: absolute;
-  transform: translateX(1053px) translateY(-78px);
   width:19px;
   height: 17px;
   background-image: url("../img/star.svg");
+}
+.catalog-option .star-1 {
+  transform: translateX(1053px) translateY(-78px);
 }
 .catalog-option .star-2 {
-  position: absolute;
   transform: translateX(1033px) translateY(-78px);
-  width:19px;
-  height: 17px;
-  background-image: url("../img/star.svg");
 }
 .catalog-option .star-3 {
-  position: absolute;
   transform: translateX(1013px) translateY(-78px);
-  width:19px;
-  height: 17px;
-  background-image: url("../img/star.svg");
 }
 .catalog-option .star-4 {
-  position: absolute;
   transform: translateX(993px) translateY(-78px);
-  width:19px;
-  height: 17px;
-  background-image: url("../img/star.svg");
 }
 
 
