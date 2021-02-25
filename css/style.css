@@ -509,10 +509,13 @@ img {
 }
 
 
-.map img {
+.map {
   display: block;
   position: relative;
   z-index: 0;
+}
+.map iframe {
+  border: 0;
 }
 
 
@@ -527,7 +530,7 @@ img {
   transform: translateY(-130px);
   color: var(--basic-black);
   background-color: rgba(255, 255, 255, 0.8);
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   padding-top: 40px;
 }
 .inner-page .main-footer {
@@ -788,13 +791,11 @@ fieldset {
 
 }
 .min-price input {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-radius: 3px 0px 0px 3px;
   border-right: none;
 }
 .max-price input {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-radius: 0px 3px 3px 0px;
   border-left: none;
 }
 
@@ -864,7 +865,7 @@ fieldset {
   width: 150px;
   white-space: nowrap;
 }
-.results-dropdown-active a {
+.results-dropdown-visited a {
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
@@ -875,7 +876,11 @@ fieldset {
   font-size: 12px;
   line-height: 18px;
   color: var(--basic-gray);
-  border-bottom: 2px dotted var(--lightblue-hover);
+  border-bottom: 2px dotted rgba(102,158,192,1);
+}
+
+.results-dropdown a:visited {
+  color: var(--lightblue);
 }
 .results-dropdown a:hover {
   color: var(--lightblue);
@@ -883,9 +888,16 @@ fieldset {
 .results-dropdown a:active {
   color: var(--basic-black);
 }
-.results-dropdown-active a:active {
+.results-dropdown-visited a:active {
   color: var(--basic-black);
 }
+a.type-dropdown:active,
+a.rating-dropdown:active,
+a.price-dropdown:active {
+  border-bottom: none;
+}
+
+
 
 .results-control-up:hover path {
   fill: var(--basic-black);
