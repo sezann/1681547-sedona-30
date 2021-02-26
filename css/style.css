@@ -101,7 +101,7 @@ img {
   list-style: none;
 }
 .site-navigation li {
-  width: 210px;
+  width: 228px;
   text-align: left;
 }
 .site-navigation li:last-child {
@@ -159,11 +159,10 @@ img {
   font-size: 21px;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 40px;
-  padding-top: 47px;
-  padding-left: 365px;
-  padding-right: 365px;
+  margin-bottom: 43px;
+  padding: 42px 367px 0 367px;
 }
+
 .description p {
   text-align: center;
   font-size: 14px;
@@ -202,10 +201,18 @@ img {
   padding: 50px;
 }
 .bridge {
-  padding: 40px;
+  padding: 44px 41px 39px 41px;
 }
 .bridge h3 {
   width: 160px;
+}
+.number {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.bridge-number {
+  margin-top: 27px;
+  margin-bottom: 18px;
 }
 
 .city-image img {
@@ -226,7 +233,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   text-align: center;
-  align-items: baseline;
+  align-items: start;
   padding: 0;
 }
 
@@ -237,13 +244,13 @@ img {
   background-color: var(--features-gray);
 }
 .feature-item-square {
-  padding: 60px 80px;
+  padding: 44px 80px;
 }
 .feature-item-road {
-  padding: 60px;
+  padding: 44px 60px;
 }
 .feature-item-silence {
-  padding: 60px 75px;
+  padding: 44px 75px;
 }
 .feature-item-city {
   display: grid;
@@ -266,7 +273,7 @@ img {
 }
 
 .recommendations h3 {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   font-size: 21px;
   line-height: 21px;
   position: relative;
@@ -309,7 +316,7 @@ img {
 }
 
 .recommend-item {
-  padding: 150px 53px 57px 50px;
+  padding: 140px 55px 57px 50px;
 }
 
 /* Hotel-search*/
@@ -321,7 +328,7 @@ img {
   text-align: center;
   font-size: 30px;
   line-height: 24px;
-  padding-top: 58px;
+  padding-top: 54px;
   margin: 0;
 }
 .booking-info  {
@@ -365,7 +372,7 @@ img {
   width: 458px;
   height: 58px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 41px;
   padding: 0;
   color: var(--basic-white);
   background-color: var(--lightblue);
@@ -419,11 +426,14 @@ img {
   border: 2px solid var(--gray-focus);
 }
 
+.booking-date p {
+  margin: 0;
+}
 
 .booking-date input{
   width: 326px;
   height: 38px;
-  padding-left: 13px;
+  padding-left: 11px;
   position: relative;
   outline: none;
 }
@@ -432,6 +442,7 @@ img {
   display: flex;
   justify-content: space-between;
   width: 458px;
+  margin-bottom: 45px;
 }
 
 .adults-field input,
@@ -527,11 +538,11 @@ img {
   text-align: center;
   position: absolute;
   width: inherit;
-  transform: translateY(-130px);
+  transform: translateY(-119px);
   color: var(--basic-black);
   background-color: rgba(255, 255, 255, 0.8);
   padding-bottom: 10px;
-  padding-top: 40px;
+  padding-top: 23px;
 }
 .inner-page .main-footer {
   display: grid;
@@ -542,9 +553,18 @@ img {
   transform: translateY(-5px);
   color: var(--basic-black);
   background-color: var(--basic-white);
-  padding-top: 36px;
+  padding-top: 19px;
 }
-
+.footer-contacts {
+  padding-left: 68px;
+}
+.sedona-hashtag {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.sedona-phone {
+  margin-top: 9px;
+}
 .footer-hashtag,
 .footer-phone {
   font-weight: bold;
@@ -552,10 +572,13 @@ img {
   line-height: 26px;
   color: inherit;
   text-decoration: none;
-  padding-left: 40px ;
 }
 
 /* Social list */
+
+.footer-social {
+  padding-top: 20px;
+}
 
 .social-list {
   display: flex;
@@ -587,10 +610,8 @@ img {
   display: flex;
   margin: 0;
   justify-content: flex-end;
-  padding-right: 135px;
-}
-.footer-contacts p {
-  margin-top: 0;
+  padding-right: 140px;
+  padding-top: 22px;
 }
 .copyright-text {
  padding-top: 10px;
@@ -642,7 +663,7 @@ h3 {
 }
 
 fieldset {
-  padding: 71px 54px 32px 53px;
+  padding: 58px 54px 46px 64px;
   margin: 0;
   border: none;
   width: 137px;
@@ -652,19 +673,19 @@ fieldset {
   font-size: 16px;
   line-height: 21px;
   position: absolute;
-  top: 85px;
+  top: 80px;
 }
 
 .housing {
-  left: 475px;
+  left: 489px;
 }
 .infrastructure{
-  left: 230px;
+  left: 236px;
 }
 
 .filter fieldset:last-child {
   margin-left: auto;
-  padding-left: 278px;
+  padding-left: 241px;
 }
 
 .filters {
@@ -678,6 +699,8 @@ fieldset {
   display: block;
   cursor: pointer;
   user-select: none;
+  top: 14px;
+  left: -13px;
 }
 
 .filter-option {
@@ -725,13 +748,14 @@ fieldset {
 }
 .filter-price {
   width: 317px;
-  margin-top: 68px;
+  margin-top: 56px;
 }
 .filter-item legend {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
+  right: 362px;
 }
 .range-controls {
   position: relative;
@@ -744,7 +768,7 @@ fieldset {
   margin-bottom: 33px;
 }
 .range-controls .bar {
-  width: 248px;
+  width: 252px;
   height: 2px;
   background: var(--basic-white);
 }
@@ -765,7 +789,7 @@ fieldset {
   left: -1px;
 }
 .range-controls .toggle-max {
-  left: 247px;
+  left: 252px;
 }
 .range-controls .toggle:hover {
   width: 4px;
@@ -777,8 +801,8 @@ fieldset {
   display: flex;
 }
 .price-controls input {
-  width: 153px;
-  height: 30px;
+  width: 154px;
+  height: 33px;
   font-family: inherit;
   font-weight: normal;
   font-size: 14px;
@@ -801,8 +825,8 @@ fieldset {
 
 .input-line {
   position: absolute;
-  top: 130px;
-  right: 374px;
+  top: 121px;
+  right: 384px;
   width: 2px;
   height: 22px;
   background-color: var(--basic-white);
@@ -810,8 +834,8 @@ fieldset {
 
 .price-button {
   position: absolute;
-  right: 315px;
-  top: 207px;
+  right: 323px;
+  top: 205px;
   width: 137px;
   height: 36px;
   text-transform: uppercase;
@@ -830,14 +854,14 @@ fieldset {
 /* Results */
 .results {
   display: flex;
-  padding: 0 53px 0 70px;
+  padding: 0 57px 0 72px;
   align-items: baseline;
   position: relative;;
 }
 .results::after {
   content: "";
   position: absolute;
-  transform: translateX(-70px) translateY(68px);
+  transform: translateX(-71px) translateY(72px);
   width: 1200px;
   height: 2px;
   background-color: var(--form-gray);
@@ -857,13 +881,15 @@ fieldset {
   line-height: 18px;
 }
 .results-filter li{
-  width: 95px;
+  width: 93px;
   text-align: center;
 }
 
 .results-current {
-  width: 150px;
+  width: 155px;
   white-space: nowrap;
+  margin-top: 29px;
+  margin-left: 17px;
 }
 .results-dropdown-visited a {
   font-weight: normal;
@@ -917,7 +943,7 @@ a.price-dropdown:active {
   margin: 0;
 }
 .catalog-items li {
-  padding: 30px 70px 30px 60px;
+  padding: 20px 73px 38px 70px;
 }
 
 .catalog-box {
@@ -932,7 +958,7 @@ a.price-dropdown:active {
 .catalog-option::before {
   content: "";
   position: absolute;
-  transform: translateX(-60px) translateY(34px);
+  transform: translateX(-70px) translateY(34px);
   width: 1200px;
   height: 2px;
   background-color: var(--form-gray);
@@ -940,7 +966,7 @@ a.price-dropdown:active {
 .inner-page .main-footer::before {
   content: "";
   position: absolute;
-  transform: translateY(6px);
+ /* transform: translateY(6px);*/
   width: 1200px;
   height: 2px;
   background-color: var(--form-gray);
@@ -1021,7 +1047,7 @@ a.price-dropdown:active {
   margin-left: auto;
   padding-top: 5px;
   width: 110px;
-  height: 27px;
+  height: 22px;
   position: relative;
 }
 .catalog-option .star {
@@ -1031,16 +1057,16 @@ a.price-dropdown:active {
   background-image: url("../img/star.svg");
 }
 .catalog-option .star-1 {
-  transform: translateX(1053px) translateY(-78px);
+  transform: translateX(1038px) translateY(-72px);
 }
 .catalog-option .star-2 {
-  transform: translateX(1033px) translateY(-78px);
+  transform: translateX(1015px) translateY(-72px);
 }
 .catalog-option .star-3 {
-  transform: translateX(1013px) translateY(-78px);
+  transform: translateX(991px) translateY(-72px);
 }
 .catalog-option .star-4 {
-  transform: translateX(993px) translateY(-78px);
+  transform: translateX(966px) translateY(-72px);
 }
 
 
