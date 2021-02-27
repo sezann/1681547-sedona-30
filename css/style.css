@@ -505,7 +505,7 @@ img {
   position: absolute;
   width: 21px;
   height: 23px;
-  transform: translateX(-37px) translateY(6px);
+  transform: translateX(-34px) translateY(9px);
   background-color: transparent;
   border: none;
 }
@@ -663,29 +663,26 @@ h3 {
 }
 
 fieldset {
-  padding: 58px 54px 46px 64px;
+  padding: 8px 111px 48px 8px;
   margin: 0;
   border: none;
   width: 137px;
 }
-.filters legend {
+.filters p {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
-  position: absolute;
-  top: 80px;
+  margin-bottom: 10px;
 }
 
 .housing {
   left: 489px;
 }
-.infrastructure{
-  left: 236px;
-}
 
 .filter fieldset:last-child {
   margin-left: auto;
-  padding-left: 241px;
+  padding-left: 237px;
+  padding-top: 10px;
 }
 
 .filters {
@@ -700,7 +697,7 @@ fieldset {
   cursor: pointer;
   user-select: none;
   top: 14px;
-  left: -13px;
+  left: 40px;
 }
 
 .filter-option {
@@ -748,15 +745,9 @@ fieldset {
 }
 .filter-price {
   width: 317px;
-  margin-top: 56px;
+  margin-top: 10px;
 }
-.filter-item legend {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  text-transform: uppercase;
-  right: 362px;
-}
+
 .range-controls {
   position: relative;
 }
@@ -801,8 +792,8 @@ fieldset {
   display: flex;
 }
 .price-controls input {
-  width: 154px;
-  height: 33px;
+  width: 152px;
+  height: 30px;
   font-family: inherit;
   font-weight: normal;
   font-size: 14px;
@@ -825,7 +816,7 @@ fieldset {
 
 .input-line {
   position: absolute;
-  top: 121px;
+  top: 119px;
   right: 384px;
   width: 2px;
   height: 22px;
@@ -905,9 +896,6 @@ fieldset {
   border-bottom: 2px dotted rgba(102,158,192,1);
 }
 
-.results-dropdown a:visited {
-  color: var(--lightblue);
-}
 .results-dropdown a:hover {
   color: var(--lightblue);
 }
