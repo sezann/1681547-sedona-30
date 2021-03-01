@@ -739,6 +739,7 @@ fieldset {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
+  position: relative;
   margin: 0;
   padding: 0;
   border: none;
@@ -790,6 +791,7 @@ fieldset {
 
 .price-controls {
   display: flex;
+
 }
 .price-controls input {
   width: 152px;
@@ -816,19 +818,17 @@ fieldset {
 
 .input-line {
   position: absolute;
-  top: 119px;
-  right: 384px;
+  top: 64px;
+  right: 159px;
   width: 2px;
   height: 22px;
   background-color: var(--basic-white);
 }
 
 .price-button {
-  position: absolute;
-  right: 323px;
-  top: 205px;
   width: 137px;
   height: 36px;
+  margin-left: 82px;
   text-transform: uppercase;
   background-color: transparent;
   color: var(--basic-white);
