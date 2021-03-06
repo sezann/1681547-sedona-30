@@ -359,7 +359,7 @@ img {
   background-color: var(--brown-focus);
   outline: none;
 }
-.sedona-hotels:focus span {
+.sedona-hotels:active span {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -398,11 +398,6 @@ img {
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   z-index: 1;
 }
-
-.modal-close {
-  display: none;/*для скрытия формы при клике*/
-}
-
 
 .booking-form p:first-child {
   margin: 0;
@@ -486,7 +481,6 @@ img {
 .adults-field,
 .kids-field {
   display: flex;
-  justify-content: flex-start;
   align-items: baseline;
 }
 .adults-field label {
@@ -1062,5 +1056,28 @@ a.price-dropdown:active {
 .catalog-option .star-4 {
   transform: translateX(966px) translateY(-72px);
 }
+
+/*Animation*/
+
+.modal-close {
+  display: none;
+
+}
+
+.modal-show {
+  display: block;
+  animation-name: form-down;
+  animation-duration: 1s;
+}
+
+@keyframes form-down {
+  from {
+    height: 0;
+  }
+  to {
+    height:358px;
+  }
+}
+
 
 

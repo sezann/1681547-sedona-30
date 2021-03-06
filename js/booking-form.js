@@ -1,9 +1,9 @@
-const popup = document.querySelector('.booking-form');
+const popup = document.querySelector('.modal');
 const button = document.querySelector('.sedona-hotels');
 
 
 button.addEventListener('click',function(evt) {
-  popup.classList.add('modal-close');
+  popup.classList.toggle('modal-close');
 });
 
 window.addEventListener('keydown', function (evt) {
