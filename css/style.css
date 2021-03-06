@@ -140,7 +140,7 @@ img {
   background-color: var(--basic-black);
   text-align: center;
   background-image: url("../img/background-photo.jpg");
-  padding: 76px 370px;
+  padding: 76px 370px 66px 370px;
   position: relative;
 }
 .welcome-group::after {
@@ -160,7 +160,7 @@ img {
   line-height: 26px;
   margin: 0;
   margin-bottom: 43px;
-  padding: 42px 367px 0 367px;
+  padding: 52px 367px 0 367px;
 }
 
 .description p {
@@ -235,6 +235,8 @@ img {
   text-align: center;
   align-items: start;
   padding: 0;
+  position: relative;
+  z-index: 3;
 }
 
 .feature-item-square,
@@ -324,6 +326,11 @@ img {
 .hotel-search {
   text-align: center;
 }
+.hotel-search-block {
+  position: relative;
+  z-index: 3;
+  background-color: white;
+}
 .hotel-search h2 {
   text-align: center;
   font-size: 30px;
@@ -395,7 +402,7 @@ img {
   transform: translateX(316px);
   color: var(--basic-black);
   background-color: var(--basic-white);
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.3);
   z-index: 1;
 }
 
@@ -1059,25 +1066,26 @@ a.price-dropdown:active {
 
 /*Animation*/
 
+@keyframes down-scroll {
+  0% {
+    transform: translateX(316px) translateY(-396px);
+  }
+  100% {
+    transform: translateX(316px) translateY(0);
+  }
+}
+
+.popup--open {
+  display: flex;
+  animation-name: down-scroll;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+}
+
 .modal-close {
   display: none;
-
 }
 
-.modal-show {
-  display: block;
-  animation-name: form-down;
-  animation-duration: 1s;
-}
-
-@keyframes form-down {
-  from {
-    height: 0;
-  }
-  to {
-    height:358px;
-  }
-}
 
 
 

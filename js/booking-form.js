@@ -1,13 +1,10 @@
 const popup = document.querySelector('.modal');
-const button = document.querySelector('.sedona-hotels');
+const buttonSwitchPopup = document.querySelector('.sedona-hotels');
 
 
-button.addEventListener('click',function(evt) {
+buttonSwitchPopup.addEventListener('click',function() {
   popup.classList.toggle('modal-close');
+  popup.classList.toggle('popup--open');
 });
 
-window.addEventListener('keydown', function (evt) {
-  if(evt.keyCode === 27) {
-    popup.classList.add('modal-close');
-  }
-});
+
