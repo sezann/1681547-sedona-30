@@ -534,6 +534,7 @@ img {
 }
 .map iframe {
   border: 0;
+  background-color: var(--lightblue);
 }
 
 
@@ -961,7 +962,6 @@ a.price-dropdown:active {
 .inner-page .main-footer::before {
   content: "";
   position: absolute;
- /* transform: translateY(6px);*/
   width: 1200px;
   height: 2px;
   background-color: var(--form-gray);
