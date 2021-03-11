@@ -267,7 +267,7 @@ img {
 
 .recommendations-list {
   display: flex;
-  height: 329px;
+  min-height: 329px;
   align-items: baseline;
   padding: 0;
   list-style: none;
@@ -558,7 +558,7 @@ img {
   text-align: center;
   position: absolute;
   width: inherit;
-  transform: translateY(-5px);
+  transform: translateX(-1px) translateY(-3px);
   color: var(--basic-black);
   background-color: var(--basic-white);
   padding-top: 19px;
@@ -634,6 +634,10 @@ img {
 
 /*catalog.html*/
 
+.inner-page .main-navigation {
+  padding: 15px 72px 29px 72px;
+}
+
 h3 {
   font-weight: bold;
   font-size: 21px;
@@ -671,7 +675,7 @@ h3 {
 }
 
 fieldset {
-  padding: 8px 111px 48px 8px;
+  padding: 27px 111px 47px 8px;
   margin: 0;
   border: none;
   width: 137px;
@@ -681,6 +685,7 @@ fieldset {
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .housing {
@@ -689,8 +694,8 @@ fieldset {
 
 .filter fieldset:last-child {
   margin-left: auto;
-  padding-left: 237px;
-  padding-top: 10px;
+  padding-left: 236px;
+  padding-top: 27px;
 }
 
 .filters {
@@ -826,8 +831,8 @@ fieldset {
 
 .input-line {
   position: absolute;
-  top: 64px;
-  right: 159px;
+  top: 66px;
+  right: 158px;
   width: 2px;
   height: 22px;
   background-color: var(--basic-white);
@@ -853,7 +858,7 @@ fieldset {
 /* Results */
 .results {
   display: flex;
-  padding: 0 57px 0 72px;
+  padding: 0 60px 0 70px;
   align-items: baseline;
   position: relative;;
 }
@@ -880,7 +885,7 @@ fieldset {
   line-height: 18px;
 }
 .results-filter li{
-  width: 93px;
+  width: 92px;
   text-align: center;
 }
 
@@ -895,6 +900,7 @@ fieldset {
   font-size: 12px;
   line-height: 18px;
   color: var(--lightblue-focus);
+  margin-left: 21px;
 }
 .results-dropdown a {
   font-weight: normal;
@@ -939,7 +945,7 @@ a.price-dropdown:active {
   margin: 0;
 }
 .catalog-items li {
-  padding: 20px 73px 38px 70px;
+  padding: 23px 73px 34px 70px;
 }
 
 .catalog-box {
